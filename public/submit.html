@@ -66,6 +66,7 @@
   .brand {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 11px;
     color: var(--green);
     font-size: 13px;
@@ -75,8 +76,8 @@
   }
   .brand-mark {
     display: block;
-    width: 88px;
-    height: 36px;
+    width: 170px;
+    height: 70px;
     flex: 0 0 auto;
     object-fit: contain;
   }
@@ -221,8 +222,9 @@
   .landing > * { position: relative; z-index: 1; }
   .landing .brand {
     position: absolute;
-    top: clamp(24px, 4vw, 32px);
-    left: clamp(24px, 4vw, 32px);
+    top: clamp(20px, 3.5vw, 28px);
+    left: 0;
+    right: 0;
     color: #374047;
     font-size: 12px;
     letter-spacing: .16em;
@@ -417,8 +419,8 @@
     .swatch { width: 46px; height: 46px; flex-basis: 46px; }
     .row button.clear { flex: 1; }
     .landing { height: calc(100dvh - 20px); min-height: 560px; gap: 12px; }
-    .landing .brand { top: 20px; left: 18px; font-size: 10px; letter-spacing: .1em; }
-    .brand-mark { width: 76px; height: 31px; }
+    .landing .brand { top: 18px; left: 0; right: 0; }
+    .brand-mark { width: 120px; height: 50px; }
     .landing .hero-notes { height: 134px; width: min(350px, 100%); margin-top: 30px; }
     .sample-note { top: 12px; width: 148px; height: 110px; padding: 14px; }
     .sample-note strong { font-size: 21px; }
@@ -468,7 +470,6 @@
   <div class="card landing active" id="landingCard">
     <div class="brand">
       <img class="brand-mark" src="/images/Logo.png" alt="Endiya logo" />
-      <span>A little note goes a long way</span>
     </div>
     <div class="hero-notes" aria-hidden="true">
       <div class="sample-note sample-note-one">
@@ -496,7 +497,6 @@
   <div class="card name-card" id="nameCard">
     <div class="brand">
       <img class="brand-mark" src="/images/Logo.png" alt="Endiya logo" />
-      <span>Wish Wall</span>
     </div>
     <div class="card-heading">
       <h1>Your name</h1>
@@ -518,7 +518,6 @@
   <div class="card note-card" id="noteCard">
     <div class="brand">
       <img class="brand-mark" src="/images/Logo.png" alt="Endiya logo" />
-      <span>Wish Wall</span>
     </div>
     <div class="card-heading">
       <h1>Write your wish</h1>
@@ -550,7 +549,6 @@
   <div class="card landing confirmation-card" id="confirmationCard">
     <div class="brand">
       <img class="brand-mark" src="/images/Logo.png" alt="Endiya logo" />
-      <span>A little note goes a long way</span>
     </div>
     <div class="confirmation-mark" aria-hidden="true">
       <span>It’s on<br>the wall!</span>
